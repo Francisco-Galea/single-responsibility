@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace single_responsibility.models
 {
@@ -49,7 +46,7 @@ namespace single_responsibility.models
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentOutOfRangeException("El salario de un trabajador no puede ser cero no negativo.....");
+                    throw new ArgumentOutOfRangeException("El salario de un trabajador no puede ser cero no negativo.");
                 }
                 hourly_salary = value;
             }
@@ -62,7 +59,7 @@ namespace single_responsibility.models
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentOutOfRangeException("Como hice para trabajar nulo o negativo???");
+                    throw new ArgumentOutOfRangeException("Las horas trabajadas no puede ser cero o negativo.");
                 }
                 hours_worked = value;
             }
@@ -75,7 +72,7 @@ namespace single_responsibility.models
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentOutOfRangeException("Como hice para trabajar nulo o negativo???");
+                    throw new ArgumentOutOfRangeException("Fallo al cargar el salario");
                 }
                 salary = value;
             }
